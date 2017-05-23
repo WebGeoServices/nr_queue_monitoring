@@ -109,10 +109,10 @@ def main():
     loglevel = args.loglevel
     setup_logger(getattr(logging, loglevel.upper(), None))
     redis_config = Config(
-        host=os.environ.get('REDIS_HOST', ''),
-        port=os.environ.get('REDIS_PORT', 6379),
-        database=os.environ.get('REDIS_DATABASE', 1),
-        prefix=os.environ.get('REDIS_QUEUE_PREFIX', 'counter')
+        host=os.environ.get('COUNTER_REDIS_HOST', ''),
+        port=os.environ.get('COUNTER_REDIS_PORT', 6379),
+        database=os.environ.get('COUNTER_REDIS_DATABASE', 1),
+        prefix=os.environ.get('COUNTER_REDIS_QUEUE_PREFIX', 'counter')
     )
     queue = Queue(redis_config)
 
