@@ -7,3 +7,8 @@ you have to defined the following environment variables:
 - REDIS_PORT=6379
 - REDIS_DATABASE=1
 - REDIS_QUEUE_PREFIX=counter
+
+To launch application run:
+```
+docker run WebGeoServices/nr_queue_monitoring
+```
