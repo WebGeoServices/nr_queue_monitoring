@@ -10,5 +10,5 @@ you have to defined the following environment variables:
 
 To launch application run:
 ```
-docker run WebGeoServices/nr_queue_monitoring
+docker run webgeoservices/nr_queue_monitoring
 ```
